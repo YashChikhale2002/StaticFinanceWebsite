@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuPay - Banking Platform Services</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .secupay-blue {
+            color: #0e3163;
+        }
+        
+        .secupay-red {
+            color: #f05542;
+        }
+        
+        .bg-secupay-red {
+            background-color: #F15744;
+        }
+        
+        .secupay-button {
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+
+        }
+        
+        .secupay-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .secupay-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .bank-illustration {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+        }
+        
+        .nav-link {
+            position: relative;
+            padding: 8px 16px;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: #0e3163;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #0e3163;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .gradient-to-white {
+            background: linear-gradient(to bottom, rgba(174, 168, 168, 0) 0%, rgba(255, 255, 255, 1) 70%, rgb(255, 255, 255) 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+            }
+            
+            .hero-content {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                padding: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                z-index: 10;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="py-4 ">
+        <div class="secupay-container flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="#" class="mr-10">
+                   <img src="./assets/images/logo.png" alt="">
+                </a>
+                <nav class="hidden md:flex border-1 p-2 rounded-xl border-gray-300 drop-shadow-2xl">
+                    <ul class="flex space-x-1">
+                        <li><a href="#" class="nav-link">Platform</a></li>
+                        <li><a href="#" class="nav-link">Services</a></li>
+                        <li><a href="#" class="nav-link">Who We Serve</a></li>
+                        <li><a href="#" class="nav-link">Company</a></li>
+                        <li><a href="#" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="secupay-button border border-secupay-red secupay-red hidden sm:block bg-rose-50
+
+                ">GET STARTED</a>
+                <a href="#" class="secupay-button bg-secupay-red text-white">FREE LIVE DEMO</a>
+                <button class="menu-toggle md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#0e3163">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16 md:py-24">
+            <div class="secupay-container">
+                <div class="flex flex-col md:flex-row items-center justify-between hero-section">
+                    <div class="hero-content md:w-1/2 mb-10 md:mb-0">
+                        <div class="uppercase font-bold secupay-blue tracking-wider text-md mb-4 text-blue-950">BANKING PLATFORM SERVICES</div>
+                        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                            <span class="secupay-red">Transform Your Business</span><br>
+                            <span class="secupay-red">Into a Banking Hub</span>
+                        </h1>
+                        <p class="text-gray-700 mb-8 text-lg">
+                            Empower your business to integrate secure and<br class="hidden md:block"> 
+                            accessible banking services.
+                        </p>
+                        <div class="mb-8 ">
+                            <a href="#" class="secupay-button bg-secupay-red text-white inline-block shadow-inner">Explore Banking Services</a>
+                        </div>
+                        <div class="flex items-center border-gray-200 border-1 w-84 rounded-2xl">
+                            <div class="flex ">
+                                <img src="./assets/images/peope.png" alt="User avatar" >
+
+
+                                
+                            </div>
+                            <span class="text-sm text-gray-600 ml-2">1 Lac+ Retail partners across India</span>
+                        </div>
+
+                   
+
+                    </div>
+                   
+
+                    <div class="relative md:w-1/2 flex justify-center md:justify-end">
+                        <!-- Image -->
+                        <img src="./assets/images/home.png" alt="People" class="w-full h-auto object-cover">
+                        
+                        <!-- Gradient overlay - positioned absolutely at bottom of image -->
+                        <div class="absolute bottom-0 left-0 right-0 h-3/6 w-full gradient-to-white pointer-events-none"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('nav ul');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
