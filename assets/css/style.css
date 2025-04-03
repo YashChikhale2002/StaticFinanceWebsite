@@ -673,12 +673,20 @@ body {
   inset: 0px;
 }
 
-.-left-4 {
-  left: -1rem;
+.-left-1\/2 {
+  left: -50%;
 }
 
-.-top-4 {
-  top: -1rem;
+.-left-20 {
+  left: -5rem;
+}
+
+.-top-1\/2 {
+  top: -50%;
+}
+
+.-top-20 {
+  top: -5rem;
 }
 
 .bottom-0 {
@@ -763,6 +771,10 @@ body {
 
 .top-4 {
   top: 1rem;
+}
+
+.-right-20 {
+  right: -5rem;
 }
 
 .isolate {
@@ -1021,21 +1033,12 @@ body {
   display: none;
 }
 
-.size-14 {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
 .h-1 {
   height: 0.25rem;
 }
 
 .h-1\/3 {
   height: 33.333333%;
-}
-
-.h-1\/6 {
-  height: 16.666667%;
 }
 
 .h-10 {
@@ -1082,6 +1085,14 @@ body {
   height: 2rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[80vw\] {
+  height: 80vw;
+}
+
 .h-auto {
   height: auto;
 }
@@ -1092,10 +1103,6 @@ body {
 
 .w-1 {
   width: 0.25rem;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
 }
 
 .w-10 {
@@ -1140,6 +1147,14 @@ body {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[80vw\] {
+  width: 80vw;
 }
 
 .w-\[this-is\\\\\] {
@@ -2414,26 +2429,12 @@ body {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-gradient-to-bl {
-  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.from-blue-100\/90 {
-  --tw-gradient-from: rgb(219 234 254 / 0.9) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(219 234 254 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-blue-900 {
@@ -2451,12 +2452,6 @@ body {
 .from-orange-500 {
   --tw-gradient-from: #f97316 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-pink-100\/90 {
-  --tw-gradient-from: rgb(252 231 243 / 0.9) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(252 231 243 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -3721,6 +3716,10 @@ body {
     height: 1.75rem;
   }
 
+  .md\:h-\[50vw\] {
+    height: 50vw;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -3739,6 +3738,10 @@ body {
 
   .md\:w-32 {
     width: 8rem;
+  }
+
+  .md\:w-\[50vw\] {
+    width: 50vw;
   }
 
   .md\:grid-cols-2 {

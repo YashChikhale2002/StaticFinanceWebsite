@@ -1,46 +1,16 @@
-<?php  include_once('includes/header.php'); ?>
-<section class="py-12 md:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-            <!-- Hero Content -->
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <div class="uppercase font-bold text-primary-600 tracking-wider text-sm mb-4">BANKING PLATFORM SERVICES</div>
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">
-                    <span class="text-secondary-500">Transform Your Business</span><br>
-                    <span class="text-secondary-500">Into a Banking Hub</span>
-                </h1>
-                <p class="text-gray-700 mb-8 text-lg max-w-lg">
-                    Empower your business to integrate secure and
-                    <br class="hidden md:block"> 
-                    accessible banking services.
-                </p>
-                <div class="mb-8">
-                    <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-secondary-500 text-white rounded-lg font-semibold transition-all hover:-translate-y-0.5 hover:shadow-md">
-                        Explore Banking Services
-                    </a>
-                </div>
-                <div class="inline-flex items-center border border-gray-200 rounded-xl p-2 shadow-sm">
-                    <div class="flex -space-x-2">
-                        <img src="./assets/images/peope.png" alt="User avatars" class="h-8 w-auto">
-                    </div>
-                    <span class="text-sm text-gray-600 ml-3">1 Lac+ Retail partners across India</span>
-                </div>
-            </div>
-            
-            <!-- Hero Image -->
-            <div class="relative md:w-1/2 flex justify-center md:justify-end">
-                <img src="./assets/images/home.png" alt="Banking Platform Illustration" class="w-full h-auto object-cover rounded-lg">
-                <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-white to-transparent"></div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include_once('includes/header.php'); ?>
 
-<!-- Hero Section with Corner Gradients -->
+
+
+<!-- Hero Section with Circular Corner Gradients -->
 <section class="relative overflow-hidden py-10 md:py-16 lg:py-24 bg-white">
-    <!-- Gradient Overlays for Top Corners -->
-    <div class="absolute -top-4 -left-4 size-14 w-1/3 h-1/3 bg-gradient-to-br from-pink-100/90 to-transparent rounded-full"></div>
-    <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-blue-100/90 to-transparent"></div>
+    <!-- Top-left Circular Gradient (Pinkish) -->
+    <div class="absolute -top-10 -left-40 w-96 h-96 rounded-full"
+         style="background: radial-gradient(circle, rgba(239, 188, 188, 0.8) 0%, rgba(242, 219, 219, 0.4) 40%, rgba(255, 255, 255, 0) 70%);"></div>
+    
+    <!-- Top-right Circular Gradient (Bluish) -->
+    <div class="absolute -top-10 -right-40 w-96 h-96 rounded-full"
+         style="background: radial-gradient(circle, rgba(222, 242, 255, 0.8) 0%, rgba(222, 242, 255, 0.4) 40%, rgba(255, 255, 255, 0) 70%);"></div>
     
     <!-- Decorative Shapes -->
     <div class="absolute top-10 md:top-16 left-2 md:left-10 lg:left-24 opacity-80 w-24 md:w-32 lg:w-auto z-10">
@@ -70,19 +40,18 @@
             <a href="#" class="inline-block bg-secondary-500 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-md font-medium hover:bg-secondary-600 transition-colors duration-200">
                 Start Your Journey Today
             </a>
+            <div class="absolute  w-96 h-96 rounded-full"
+         style="background: radial-gradient(circle, rgba(239, 188, 188, 0.8) 0%, rgba(242, 219, 219, 0.4) 40%, rgba(255, 255, 255, 0) 70%);"></div>
+   
         </div>
 
         <!-- Dashboard Image -->
         <div class="relative max-w-5xl mx-auto">
             <!-- Main Dashboard Image -->
             <div class="relative z-20">
-                <img src="./assets/images/home/dashboard.png" alt="Dashboard" class="w-full h-auto " />
+                <img src="./assets/images/home/dashboard.png" alt="Dashboard" class="w-full h-auto" />
                 <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-white to-transparent"></div>
-
             </div>
-
-            <!-- Gradient Fade Effect at the Bottom -->
-            <div class="absolute bottom-0 left-0 right-0 h-1/6 bg-gradient-to-t from-white to-transparent"></div>
         </div>
 
         <!-- Trusted By Section -->
@@ -101,5 +70,5 @@
         </div>
     </div>
 </section>
-<?php  include_once('includes/footer.php'); ?>
 
+<?php include_once('includes/footer.php'); ?>
