@@ -16,7 +16,7 @@
             <div class="flex items-center justify-between">
                 <!-- Logo Column -->
                 <div class="w-2/7">
-                    <a href="#">
+                    <a href="/">
                         <img src="./assets/images/logo.png" alt="SecuPay Logo">
                     </a>
                 </div>
