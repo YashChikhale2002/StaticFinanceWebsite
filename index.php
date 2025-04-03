@@ -51,7 +51,7 @@
 
         <!-- Trusted By Section -->
         <div class="mt-10 md:mt-16 text-center">
-            <p class="text-gray-700 font-medium mb-6 md:mb-8">Trusted by India's Leading Banks</p>
+            <p class="text-gray-700 font-semibold mb-6 md:mb-8">Trusted by India's Leading Banks</p>
             <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6 lg:gap-10">
                 <img src="./assets/images/home/hdfc.png" alt="HDFC Bank" class="h-8 w-auto" />
                 <img src="./assets/images/home/idfc.png" alt="IDFC Bank" class="h-8 w-auto" />
@@ -64,6 +64,84 @@
             </div>
         </div>
     </div>
+</section>
+
+
+<!-- Product/Solutions Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-primary-800 mb-4">Our Product/Solutions</h2>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">Building trust through partnerships that last Creating a network that serves millions"</p>
+    </div>
+    
+    <!-- Service Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      
+      <!-- Banking Card -->
+      <div class="bg-secondary-500 rounded-lg shadow-md p-6 text-center text-white transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6v12h18V6H3zm4 8H5v-4h2v4zm4 0H9v-4h2v4zm4 0h-2v-4h2v4zm4 0h-2v-4h2v4zM21 4H3L3 2h18v2z M12 20v2 M8 22h8"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg">Banking</h3>
+      </div>
+      
+      <!-- Travel Booking Card -->
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 14H3M21 7l-9 3-9-3m18 0v11a2 2 0 01-2 2H5a2 2 0 01-2-2V7m18 0l-2-2H7L5 7m5 4v.01M12 11v.01M19 11v.01"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg text-primary-600">Travel Booking</h3>
+      </div>
+      
+      <!-- Utility Payment Card -->
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 11v4M9 13h6"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg text-primary-600">Utility Payment</h3>
+      </div>
+      
+      <!-- E-Governance Card -->
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg text-primary-600">E-Governance</h3>
+      </div>
+      
+      <!-- Insurance Services Card -->
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg text-primary-600">Insurance Services</h3>
+      </div>
+      
+      <!-- ONDC Card -->
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg text-primary-600">ONDC</h3>
+      </div>
+      
+    </div>
+  </div>
 </section>
 
 <?php include_once('includes/footer.php'); ?>
